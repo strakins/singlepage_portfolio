@@ -1,0 +1,457 @@
+/* Variables */
+
+:root {
+  --bg-color: #262626;
+  --header: #6cb0e8;
+  --fontcolor: #f1f2f2;
+  --primary-1: #0fadc9;
+  --primary-2: #ffffff;
+  --primary-3: #15545e;
+  --button-info: #1b2021;
+  --nav-hover: var(--primary-2);
+}
+
+/* Universal */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: var(--bg-color);
+  color: var(--fontcolor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  max-width: 100%;
+  margin: 0 auto;
+  background: var(--header);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+  color: var(--fontcolor);
+}
+
+a {
+  color: var(-primary-2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(-primary-1);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  min-height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.name {
+	font-size: 32px;
+}
+.name span {
+	display: block;
+	font-size: 16px;
+	margin-left: 12px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+  color: var(--fontcolor);
+  font-size: 20px;
+}
+
+nav li a {
+  color: var(--fontcolor);
+}
+
+nav li a:hover {
+  color: var(--nav-hover);
+  border-bottom: 2px solid var(--nav-hover);
+}
+
+/* About AND Contact */
+#about,
+#contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+#contact {
+  flex-direction: row-reverse;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.about-me h2 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 3rem;
+}
+.about-me h4 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	color: var(--header);
+}
+.about-me p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+#about img,
+#contact img {
+  width: 35%;
+  margin-right: 10px;
+  border-radius: 10%;
+  box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+/* Skills */
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+#skills li {
+  margin: 2rem 1.5rem;
+  color: var(--primary-2);
+  font-size: 60px;
+  cursor: pointer;
+}
+
+#skills li:hover {
+  color: var(--primary-1);
+}
+
+/* Projects */
+#projects,
+#Skills {
+  margin: 100px 0;
+}
+
+#projects h2,
+#skills h2 {
+  text-align: center;
+}
+
+#projects p {
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.project {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  max-width: 578px;
+  height: 250px;
+  margin: 10px;
+  box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  object-fit: cover;
+  width: 66%;
+  border: 1px solid var(--primary-3);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+  background-color: var(--primary-3);
+  font-size: 15px;
+  width: 33%;
+  padding: 10px;
+}
+
+.project-info ul {
+  margin: 0;
+}
+.project-info ul li {
+  list-style: none;
+}
+
+
+button {
+  background-color: var(--primary-1);
+  border: none;
+  padding: 7px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  box-shadow: 3px 4px 3px -3px rgba(0, 0, 0, 0.4);
+}
+
+button a {
+  color: var(--button-info);
+}
+
+button:hover {
+  background-color: var(--primary-2);
+  color: #ffffff;
+}
+
+button a:hover {
+  color: var(--bg-color);
+}
+
+.project-info button {
+  padding: 8px;
+  width: 100%;
+}
+
+.project-info button a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Contact Me */
+
+#contact ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+#contact li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+#contact i {
+  font-size: 40px;
+  color: var(--primary-2);
+}
+
+#contact i:hover {
+  color: var(--primary-1);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--primary-1);
+  margin-top: 100px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* layout 1200px */
+
+@media screen and (max-width: 1200px) {
+  header,
+  main {
+    margin: 0 20px 0 20px;
+  }
+
+  nav {
+    margin-right: 20px;
+  }
+
+  nav li {
+    font-size: 20px;
+  }
+
+  #about {
+    justify-content: center;
+  }
+
+  .about-me {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #about img {
+    width: 50%;
+  }
+
+  #projects p {
+    text-align: center;
+  }
+
+  .project-info ul {
+    margin: 10px 0;
+  }
+
+  .column {
+    flex: 0 1 100%;
+    align-items: center;
+  }
+
+  #skills ul {
+    padding: 0;
+    justify-content: center;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #contact ul {
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  #contact img {
+    width: 75%;
+  }
+}
+
+/*  layout 768px */
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  header h1 {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0;
+  }
+
+  nav li {
+    justify-content: center;
+    margin: 7px;
+    font-size: 18px;
+  }
+
+  #about {
+    margin: 0;
+    flex-wrap: wrap-reverse;
+  }
+
+  #about img {
+    margin: 50px 0;
+  }
+
+  #projects {
+    margin: 0;
+  }
+
+  #projects p {
+    margin: 0;
+  }
+  .column {
+    flex: 1 0 100%;
+  }
+
+  .project {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-image,
+  .project-info {
+    width: 100%;
+  }
+
+  .project-info ul {
+    margin: 1rem 0;
+  }
+
+  #skills {
+    margin: 50px 0;
+  }
+
+  #skills ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  #skills li {
+    margin: 0 15px;
+  }
+
+  #contact {
+    margin: 20px 0;
+    text-align: left;
+  }
+}
+
+/* layout 320px */
+
+@media screen and (max-width: 320px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  #contact ul {
+    flex-wrap: wrap;
+  }
+}
