@@ -14,7 +14,7 @@
 /* Universal */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;;
   font-size: 20px;
   background-color: var(--bg-color);
   color: var(--fontcolor);
@@ -34,7 +34,7 @@ header {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -64,12 +64,12 @@ header {
   padding: 3rem;
 }
 .name {
-	font-size: 32px;
+  font-size: 32px;
 }
 .name span {
-	display: block;
-	font-size: 16px;
-	margin-left: 12px;
+  display: block;
+  font-size: 16px;
+  margin-left: 12px;
 }
 
 nav ul {
@@ -93,17 +93,13 @@ nav li a:hover {
 }
 
 /* About AND Contact */
-#about,
-#contact {
+#about {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 100px 0;
 }
 
-#contact {
-  flex-direction: row-reverse;
-}
 
 .about-me {
   display: flex;
@@ -114,24 +110,25 @@ nav li a:hover {
 }
 
 .about-me h2 {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 .about-me h4 {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-size: 2rem;
-	color: var(--header);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--header);
 }
 .about-me p {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
 }
 
-#about img,
-#contact img {
+#about img {
   width: 35%;
   margin-right: 10px;
   border-radius: 10%;
@@ -168,6 +165,7 @@ nav li a:hover {
 #projects h2,
 #skills h2 {
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 #projects p {
@@ -196,15 +194,15 @@ nav li a:hover {
 .project {
   display: inline-flex;
   flex-direction: row-reverse;
-  max-width: 578px;
-  height: 250px;
+  max-width: 700px;
+  height: 400px;
   margin: 10px;
   box-shadow: 6px 8px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 .project-image {
   object-fit: cover;
-  width: 66%;
+  width: 70%;
   border: 1px solid var(--primary-3);
 }
 
@@ -225,7 +223,6 @@ nav li a:hover {
 .project-info ul li {
   list-style: none;
 }
-
 
 button {
   background-color: var(--primary-1);
@@ -261,17 +258,31 @@ button a:hover {
 }
 
 /* Contact Me */
+#contact {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+	/* flex-direction: column-reverse; */
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 #contact ul {
+  margin-top: 2rem;
   display: flex;
   justify-content: flex-start;
   padding-left: 0;
 }
 
 #contact li {
+  
   list-style: none;
   margin-right: 20px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #contact i {
@@ -282,6 +293,8 @@ button a:hover {
 #contact i:hover {
   color: var(--primary-1);
 }
+
+
 
 /* Footer */
 footer {
@@ -352,9 +365,7 @@ footer p {
     margin: 50px 0;
   }
 
-  #contact img {
-    width: 75%;
-  }
+  
 }
 
 /*  layout 768px */
